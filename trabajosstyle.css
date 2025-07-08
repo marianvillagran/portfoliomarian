@@ -1,0 +1,54 @@
+.miDiv {
+ border: 1px solid black;
+  flex: 1;
+  height: 400px;
+  background-color: lightblue;
+  transition: all 0.8s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+   margin: 10px 5px;
+     overflow: hidden;
+}
+
+
+.miDiv:hover {
+  flex-grow: 2;
+
+
+}
+
+
+.miDiv:not(:hover) {
+  flex-grow: 1;
+}
+
+
+
+
+.contenedor{
+  display: flex;
+}
+.imgTrabajo{
+  margin-top: 10%;
+  height: 150px;
+  width: 300px;
+  transition: transform 0.8s linear ;
+
+
+
+
+}
+
+
+.miDiv:hover img {
+  transform: scale(1.9); /* Agrandamos la imagen al pasar el cursor sobre el div */
+  margin-top: 120px;
+}
+
+
+.miDiv:hover h1 {
+  opacity: 0; /* Ocultamos el h1 al pasar el cursor sobre el div */
+}
+body{
+  margin: 0;
+}
